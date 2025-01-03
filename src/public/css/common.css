@@ -1,0 +1,30 @@
+.header {
+    display: flex;
+    border-bottom: solid 1px #BEB1A6;
+    align-items: center;
+}
+
+.header_logo {
+    margin: 10px auto;
+    cursor: pointer;
+    color: #BEB1A6;
+    margin-left: 600px;
+}
+
+.form .header_button {
+    margin: 15px 20px 15px 0px;
+    border: solid 2px #BEB1A6;
+    color: #BEB1A6;
+    background-color: white;
+    border-radius: 5px;
+    padding: 2px 15px;
+    height: 44px;
+    cursor: pointer;
+}
+.form .header_button:hover{
+    background-color: #F4F4F4;
+}
+
+body {
+    font-family: "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ ProN W3", "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+}

@@ -1,0 +1,23 @@
+.thanks{
+    width: 100vw;
+    margin: 200px auto;
+    text-align: center;
+}
+
+.thanks__message{
+ font-size: 30px;
+ margin-top: 220px;
+ margin-bottom: 50px;
+ color: #82756A;
+}
+
+.thanks__home{
+    padding: 10px;
+    width: 146px;
+    height: 50px;
+    border: none;
+    border-radius: 5px;
+    background-color: #82756A;
+    color: #fff;
+    cursor: pointer; 
+}

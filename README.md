@@ -9,9 +9,7 @@
      code .  
   4.Laravel のパッケージのインストール  
      docker-compose exec php bash  
-
-     composer -v  
-
+     composer install  
   5.env ファイルの作成  
     cp .env.example .env  
   6.envファイルの11行目以降を以下のように修正  

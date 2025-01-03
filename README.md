@@ -9,7 +9,9 @@
    2.DockerDesktopを起動  
    3.クローンしたconfirmation-contact-firmプロジェクト上で、以下のコードを実行してください。  
      ```
-　 docker-compose up -d --build   
+　 docker-compose up -d --build
+  ```
+  ``` 
      code .  
      ```  
   4.Laravel のパッケージのインストール  

@@ -11,16 +11,16 @@
      ```
 　   docker-compose up -d --build  
      code .  
-     ```
+     ```  
   4.Laravel のパッケージのインストール  
      ```
      docker-compose exec php bash  
      composer install  
-     ```
+     ```  
   5.env ファイルの作成  
      ```
     cp .env.example .env
-     ```
+     ```  
   6.envファイルの11行目以降を以下のように修正  
     ```
     DB_CONNECTION=mysql  
@@ -29,11 +29,11 @@
     DB_DATABASE=laravel_db  
     DB_USERNAME=laravel_user  
     DB_PASSWORD=laravel_pass  
-    ```
-  7.アプリケーションキーの作成  
+    ```  
+  7.アプリケーションキーの作成   
      ```
     php artisan key:generate 
-    ```
+    ```  
 
 ## 使用技術(実行環境)
    php 8.4.1  

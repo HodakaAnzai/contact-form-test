@@ -6,6 +6,7 @@ use App\Models\User;
 use App\Http\Requests\AuthRequest;
 use Illuminate\Support\Facades\Hash;
 use Laravel\Fortify\Contracts\CreatesNewUsers;
+use Illuminate\Support\Facades\Redirect;
 
 class CreateNewUser implements CreatesNewUsers
 {
@@ -21,6 +22,5 @@ class CreateNewUser implements CreatesNewUsers
             'email' => $validated['email'],
             'password' => Hash::make($validated['password']),
         ]);
-       
     }
 }

@@ -2,16 +2,16 @@
 　お問い合わせフォーム  
 
 ## 環境構築
-   1.クローン  
-     ```
-     git clone git@github.com:HodakaAnzai/contact-form-test.git  
-     ```  
-   2.DockerDesktopを起動  
-   3.クローンしたconfirmation-contact-firmプロジェクト上で、以下のコードを実行してください。  
-     ```
-  docker-compose up -d --build
-  code .  
-     ```  
+1.クローン  
+```
+git clone git@github.com:HodakaAnzai/contact-form-test.git  
+```
+2.DockerDesktopを起動  
+3.クローンしたconfirmation-contact-firmプロジェクト上で、以下のコードを実行してください。  
+```
+docker-compose up -d --build
+code .  
+```  
   4.Laravel のパッケージのインストール  
      ```
      docker-compose exec php bash  

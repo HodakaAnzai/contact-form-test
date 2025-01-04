@@ -7,8 +7,9 @@
 git clone git@github.com:HodakaAnzai/contact-form-test.git  
 ```
 2.DockerDesktopを起動  
-3.クローンしたconfirmation-contact-firmプロジェクト上で、以下のコードを実行してください。  
+3.以下のコードを実行してください。  
 ```
+cd contact-form-test
 docker-compose up -d --build
 code .  
 ```  

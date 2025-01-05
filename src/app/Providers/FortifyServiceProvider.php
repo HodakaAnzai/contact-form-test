@@ -13,6 +13,7 @@ use Laravel\Fortify\Contracts\CreatesNewUsers;
 use Illuminate\Support\Facades\Event;
 use Illuminate\Auth\Events\Registered;
 use Illuminate\Support\Facades\Auth;
+use Laravel\Fortify\Contracts\RegisterResponse;
 
 
 class FortifyServiceProvider extends ServiceProvider
@@ -22,6 +23,15 @@ class FortifyServiceProvider extends ServiceProvider
      */
     public function register(): void
     {
+        $this->app->singleton(RegisterResponse::class, function () {
+            return new class implements RegisterResponse {
+                public function toResponse($request)
+                {
+                    Auth::logout();
+                    return redirect('/login')->with('success', 'Registration successful!');
+                }
+            };
+        });
         $this->app->singleton(LogoutResponse::class, function () {
             return new class implements LogoutResponse {
                 public function toResponse($request)

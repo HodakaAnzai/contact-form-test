@@ -59,7 +59,7 @@ class ContactController extends Controller
 
     public function admin()
     {
-        $contacts = Contact::with('category')->Paginate(7);
+        $contacts = Contact::with('category')->paginate(7);
         $categories = Category::all();
         return view('admin', compact('contacts', 'categories'));
     }
@@ -80,7 +80,7 @@ class ContactController extends Controller
             'date' => $request->date,
         ];
 
-        $contacts = Contact::with('category')->contactSearch($request)->Paginate(7);
+        $contacts = Contact::with('category')->contactSearch($request)->paginate(7);
         $categories = Category::all();
         return view('admin', compact('contacts', 'categories', 'searchConditions'));
     }

@@ -1,5 +1,7 @@
 # アプリケーション名
 　お問い合わせフォーム  
+ ![Image](https://github.com/user-attachments/assets/ecd31db6-3a4f-4fe3-b9d4-d785f9b64f57)
+![Image](https://github.com/user-attachments/assets/844ffbb8-652e-4fff-b7d1-0859e767bdc2)
  ![Image](https://github.com/user-attachments/assets/2a4fc39b-532f-42e1-88f2-12d3897d73d0)
 
 ## 環境構築
